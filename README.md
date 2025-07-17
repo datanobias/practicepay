@@ -31,6 +31,12 @@ A comprehensive web application for collecting and analyzing dental practice com
 4. **Import database.sql** → Create tables via phpMyAdmin
 5. **Test application** → Submit survey and view charts
 
+#### Example Git Commands:
+```bash
+git remote add origin https://github.com/yourusername/dental-pay-survey.git
+git push -u origin main
+```
+
 #### Example config.php for Hostinger:
 ```php
 define('DB_HOST', 'mysql.hostinger.com');

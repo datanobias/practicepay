@@ -17,7 +17,7 @@
 1. In Hostinger control panel, go to "Git"
 2. Click "Create new repository"
 3. Enter your repository URL
-4. Set branch to `main` or `master`
+4. Set branch to `main`
 5. Set deployment path to `public_html`
 6. Enable automatic deployment
 
