@@ -9,7 +9,7 @@
 ### Step 2: Hostinger Database Setup
 1. Log into Hostinger control panel
 2. Go to "Databases" → "MySQL Databases"
-3. Create new database: `dental_pay_survey`
+3. Create new database: `u395558639_dentalpay`
 4. Create database user with full privileges
 5. Note: hostname, database name, username, password
 
@@ -28,8 +28,8 @@ Create `config.php` in your deployment directory:
 <?php
 // Production Database Configuration
 define('DB_HOST', 'mysql.hostinger.com');
-define('DB_NAME', 'u123456_dental_survey');  // Your actual DB name
-define('DB_USER', 'u123456_user');           // Your actual DB user
+define('DB_NAME', 'u395558639_dentalpay');   // Your actual DB name
+define('DB_USER', 'admin');                  // Your actual DB user
 define('DB_PASS', 'your_secure_password');   // Your actual DB password
 define('DB_CHARSET', 'utf8mb4');
 
@@ -79,8 +79,8 @@ For hosts that support environment variables:
 ```bash
 # Set these in your hosting control panel
 DB_HOST=mysql.hostinger.com
-DB_NAME=u123456_dental_survey
-DB_USER=u123456_user
+DB_NAME=u395558639_dentalpay
+DB_USER=admin
 DB_PASS=your_secure_password
 APP_ENV=production
 APP_DEBUG=false

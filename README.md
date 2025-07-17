@@ -40,8 +40,8 @@ git push -u origin main
 #### Example config.php for Hostinger:
 ```php
 define('DB_HOST', 'mysql.hostinger.com');
-define('DB_NAME', 'u123456_dental_survey');
-define('DB_USER', 'u123456_user');  
+define('DB_NAME', 'u395558639_dentalpay');
+define('DB_USER', 'admin');  
 define('DB_PASS', 'your_secure_password');
 define('APP_ENV', 'production');
 define('APP_DEBUG', false);
