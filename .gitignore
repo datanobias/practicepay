@@ -15,7 +15,7 @@ ehthumbs.db
 Thumbs.db
 
 # Ignore sensitive configuration files
-config.php
+config.local.php
 .env
 .env.local
 .env.production
