@@ -1,8 +1,8 @@
 -- Dental Practice Pay Survey Database Schema
 -- Run this SQL in your MySQL database to create the required table
 
-CREATE DATABASE IF NOT EXISTS dental_pay_survey;
-USE dental_pay_survey;
+CREATE DATABASE IF NOT EXISTS u395558639_dentalpay;
+USE u395558639_dentalpay;
 
 -- Create the pay_surveys table
 CREATE TABLE IF NOT EXISTS pay_surveys (

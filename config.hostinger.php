@@ -8,9 +8,9 @@
 
 // Hostinger Database Configuration
 define('DB_HOST', 'localhost');                    // Usually 'localhost' for Hostinger
-define('DB_NAME', 'u123456_dental_survey');        // Your actual database name
-define('DB_USER', 'u123456_user');                 // Your actual database username
-define('DB_PASS', 'your_secure_password');         // Your actual database password
+define('DB_NAME', 'u395558639_dentalpay');        // Your actual database name
+define('DB_USER', 'admin');                 // Your actual database username
+define('DB_PASS', 'V7x@9l#P2g%Z3$K');         // Your actual database password
 define('DB_CHARSET', 'utf8mb4');
 
 // Production Application Configuration

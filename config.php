@@ -8,7 +8,7 @@
 
 // Database configuration - UPDATE THESE VALUES FOR YOUR ENVIRONMENT
 define('DB_HOST', getenv('DB_HOST') ?: 'localhost');
-define('DB_NAME', getenv('DB_NAME') ?: 'dental_pay_survey');
+define('DB_NAME', getenv('DB_NAME') ?: 'u395558639_dentalpay');
 define('DB_USER', getenv('DB_USER') ?: 'your_username');
 define('DB_PASS', getenv('DB_PASS') ?: 'your_password');
 define('DB_CHARSET', 'utf8mb4');
