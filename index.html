@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dental Practice Pay Survey</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Dental Practice Pay Survey</h1>
+            <p>Help us understand compensation trends in the dental industry</p>
+        </header>
+
+        <main>
+            <!-- Survey Form Section -->
+            <section class="survey-section">
+                <h2>Submit Your Pay Information</h2>
+                <form id="surveyForm" class="survey-form">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required maxlength="100">
+                        <span class="error-message" id="name-error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required maxlength="150">
+                        <span class="error-message" id="email-error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="role">Role *</label>
+                        <select id="role" name="role" required>
+                            <option value="">Select your role</option>
+                            <option value="Dentist">Dentist</option>
+                            <option value="Hygienist">Dental Hygienist</option>
+                            <option value="Assistant">Dental Assistant</option>
+                            <option value="Office Manager">Office Manager</option>
+                            <option value="Lab Tech">Lab Technician</option>
+                            <option value="Other">Other</option>
+                        </select>
+                        <span class="error-message" id="role-error"></span>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="country">Country *</label>
+                            <select id="country" name="country" required>
+                                <option value="">Select country</option>
+                                <option value="USA">United States</option>
+                                <option value="Canada">Canada</option>
+                            </select>
+                            <span class="error-message" id="country-error"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="state">State/Province *</label>
+                            <select id="state" name="state" required>
+                                <option value="">Select state/province</option>
+                            </select>
+                            <span class="error-message" id="state-error"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="practice">Practice Name (Optional)</label>
+                        <input type="text" id="practice" name="practice" maxlength="150">
+                        <span class="error-message" id="practice-error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="hourly_rate">Hourly Rate (USD) *</label>
+                        <div class="input-with-prefix">
+                            <span class="prefix">$</span>
+                            <input type="number" id="hourly_rate" name="hourly_rate" min="0" max="999.99" step="0.01" required>
+                        </div>
+                        <span class="error-message" id="hourly_rate-error"></span>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Submit Survey</button>
+                </form>
+
+                <div id="form-message" class="form-message"></div>
+            </section>
+
+            <!-- Results Section -->
+            <section class="results-section">
+                <h2>Average Hourly Rates by Location</h2>
+                <div id="loading-message" class="loading">Loading survey data...</div>
+                <div id="chart-container" class="chart-container" style="display: none;">
+                    <canvas id="payChart"></canvas>
+                </div>
+                <div id="summary-stats" class="summary-stats"></div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Dental Practice Pay Survey. Data is anonymized and used for industry research.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

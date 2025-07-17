@@ -1,0 +1,70 @@
+# Ignore IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Ignore OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Ignore sensitive configuration files
+config.php
+.env
+.env.local
+.env.production
+.env.example.local
+
+# Ignore logs
+*.log
+error.log
+access.log
+
+# Ignore temporary files
+*.tmp
+*.temp
+temp/
+tmp/
+
+# Ignore backup files
+*.bak
+*.backup
+*~
+
+# Ignore cache files
+cache/
+*.cache
+
+# Ignore uploaded files (if any)
+uploads/
+files/
+
+# Ignore vendor/dependencies (if using Composer)
+vendor/
+composer.lock
+
+# Ignore node modules (if using any Node.js tools)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Ignore build/dist files
+build/
+dist/
+
+# Ignore testing files
+tests/
+phpunit.xml
+
+# Ignore documentation build files
+docs/_build/
+
+# Ignore PHP-specific files
+.phpunit.result.cache
+.php_cs.cache
