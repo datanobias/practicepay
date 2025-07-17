@@ -98,10 +98,32 @@ APP_DEBUG=false
 ## Troubleshooting
 
 ### Common Issues:
-1. **Database Connection Error**: Check credentials in config.php
-2. **500 Internal Server Error**: Check PHP error logs
-3. **Charts Not Loading**: Verify database has data or shows empty state
-4. **Form Submission Fails**: Check database table structure
+1. **"An error occurred while processing your submission"**
+   - Upload test-db.php to check database connection
+   - Verify config.php has correct credentials
+   - Check if database.sql was imported properly
+   - Check PHP error logs in public_html/error_logs/
+
+2. **Database Connection Error**: Check credentials in config.php
+3. **500 Internal Server Error**: Check PHP error logs
+4. **Charts Not Loading**: Verify database has data or shows empty state
+5. **Form Submission Fails**: Check database table structure
+
+### Debug Steps:
+1. **Test Database Connection:**
+   - Upload test-db.php to your public_html directory
+   - Visit yoursite.com/test-db.php
+   - Check connection status and table structure
+   - Delete test-db.php after testing
+
+2. **Check PHP Error Logs:**
+   - Look in public_html/error_logs/ directory
+   - Check for any PHP errors or database connection issues
+
+3. **Verify Database Setup:**
+   - Ensure database.sql was imported via phpMyAdmin
+   - Check that all tables exist
+   - Verify database user has proper permissions
 
 ### Support Resources:
 - Hostinger Documentation: https://support.hostinger.com
